@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203201CB2523A96300AC153F /* iTodo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 203201C92523A96300AC153F /* iTodo.xcdatamodeld */; };
+		203201CD2523AA1C00AC153F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203201CC2523AA1C00AC153F /* CoreDataStack.swift */; };
 		209453BF2523750D00AEBD1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209453BE2523750D00AEBD1E /* AppDelegate.swift */; };
 		209453C12523750D00AEBD1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209453C02523750D00AEBD1E /* SceneDelegate.swift */; };
 		209453C32523750D00AEBD1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209453C22523750D00AEBD1E /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		203201CA2523A96300AC153F /* iTodo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTodo.xcdatamodel; sourceTree = "<group>"; };
+		203201CC2523AA1C00AC153F /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		209453BB2523750D00AEBD1E /* iTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209453BE2523750D00AEBD1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		209453C02523750D00AEBD1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		203201C82523A94300AC153F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				203201C92523A96300AC153F /* iTodo.xcdatamodeld */,
+				203201CC2523AA1C00AC153F /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		209453B22523750D00AEBD1E = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +73,7 @@
 		209453BD2523750D00AEBD1E /* iTodo */ = {
 			isa = PBXGroup;
 			children = (
+				203201C82523A94300AC153F /* CoreData */,
 				209453D2252384D500AEBD1E /* ViewControllers */,
 				209453BE2523750D00AEBD1E /* AppDelegate.swift */,
 				209453C02523750D00AEBD1E /* SceneDelegate.swift */,
@@ -152,7 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				203201CD2523AA1C00AC153F /* CoreDataStack.swift in Sources */,
 				209453C32523750D00AEBD1E /* ViewController.swift in Sources */,
+				203201CB2523A96300AC153F /* iTodo.xcdatamodeld in Sources */,
 				209453D42523851500AEBD1E /* AddNewTodoViewController.swift in Sources */,
 				209453BF2523750D00AEBD1E /* AppDelegate.swift in Sources */,
 				209453D62523854B00AEBD1E /* TodosTableViewController.swift in Sources */,
@@ -352,6 +368,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		203201C92523A96300AC153F /* iTodo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				203201CA2523A96300AC153F /* iTodo.xcdatamodel */,
+			);
+			currentVersion = 203201CA2523A96300AC153F /* iTodo.xcdatamodel */;
+			path = iTodo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 209453B32523750D00AEBD1E /* Project object */;
 }
